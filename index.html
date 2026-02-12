@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nissa Kuker - Kue Kering Berkualitas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/decorations.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo">
+                <div>
+                    <h1 class="logo-text">Nissa Kuker</h1>
+                    <p class="logo-subtitle">Aneka Kue Kering</p>
+                </div>
+            </a>
+
+            <div class="nav-desktop">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="products.html" class="nav-link">Produk</a>
+                <a href="testimonials.html" class="nav-link">Testimoni</a>
+                <a href="about.html" class="nav-link">Tentang</a>
+                <a href="https://instagram.com/nissa.kuker" target="_blank" class="nav-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                </a>
+                <a href="cart.html" class="cart-btn">
+                    <div class="cart-icon-wrapper">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                    </div>
+                    <span class="cart-count" id="cartCount">0</span>
+                </a>
+            </div>
+
+            <div class="nav-mobile">
+                <a href="cart.html" class="cart-btn-mobile">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                    </svg>
+                    <span class="cart-count" id="cartCountMobile">0</span>
+                </a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-menu-link">Beranda</a>
+            <a href="products.html" class="mobile-menu-link">Produk</a>
+            <a href="testimonials.html" class="mobile-menu-link">Testimoni</a>
+            <a href="about.html" class="mobile-menu-link">Tentang</a>
+            <a href="https://instagram.com/nissa.kuker" target="_blank" class="mobile-menu-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+                Instagram
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero ketupat-pattern">
+        <div class="lantern lantern-left"></div>
+        <div class="lantern lantern-right"></div>
+        <div class="star star-1"></div>
+        <div class="star star-2"></div>
+
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="badge">
+                    Lebaran 2026
+                </div>
+                <h1 class="hero-title">
+                    Kue Kering<br>
+                    <span class="gradient-text">Istimewa Lebaran</span>
+                </h1>
+                <p class="hero-description">
+                    Hadirkan kehangatan dan kelezatan tradisional dengan kue kering premium dari Ngadirojo, Pacitan
+                </p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn btn-primary">
+                        Lihat Produk
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                    <a href="testimonials.html" class="btn btn-secondary">Lihat Testimoni</a>
+                </div>
+            </div>
+
+            <div class="hero-image">
+                <img src="../img/kue-kacang.jpg" alt="Kue Lebaran">
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mengapa Pilih Nissa Kuker?</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Kualitas Premium</h3>
+                    <p class="feature-description">Bahan pilihan terbaik untuk cita rasa sempurna dan kualitas terjamin</p>
+                </div>
+
+                <div class="feature-card gold">
+                    <div class="feature-icon gold">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Buatan Rumahan</h3>
+                    <p class="feature-description">Dibuat dengan kehangatan dan cinta untuk keluarga Anda</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon green">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="1"></circle>
+                            <circle cx="12" cy="5" r="1"></circle>
+                            <circle cx="12" cy="19" r="1"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="feature-title">Pesanan Fleksibel</h3>
+                    <p class="feature-description">Menerima pesanan hingga H-7 Lebaran dengan layanan responsif</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products ketupat-pattern">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Koleksi Kue Kering</h2>
+                <p class="section-description">Pilihan lengkap kue kering untuk melengkapi parcel Lebaran Anda</p>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
+                <!-- Products akan di-load via JavaScript -->
+            </div>
+
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="products.html" class="btn btn-dark">
+                    Lihat Semua Produk
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta islamic-pattern">
+        <div class="lantern lantern-cta-left"></div>
+        <div class="lantern lantern-cta-right"></div>
+
+        <div class="container text-center">
+            <svg class="cta-icon" width="64" height="64" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+                <path d="M18 3l.5 2 2 .5-2 .5-.5 2-.5-2-2-.5 2-.5.5-2z"/>
+            </svg>
+            <h2 class="cta-title">Pesan Sekarang untuk Lebaran 2026</h2>
+            <p class="cta-description">
+                Jangan sampai kehabisan! Pesan kue kering favoritmu sekarang dan rayakan Lebaran dengan penuh kehangatan
+            </p>
+            <a href="products.html" class="btn btn-white">
+                Mulai Belanja
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer islamic-pattern">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+                            <path d="M18 3l.5 2 2 .5-2 .5-.5 2-.5-2-2-.5 2-.5.5-2z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Nissa Kuker</h3>
+                        <p>Kue Lebaran Berkualitas</p>
+                    </div>
+                </div>
+                <p class="footer-description">Menghadirkan kue kering premium untuk melengkapi momen spesial Anda sejak 2021</p>
+                <div class="footer-location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>Ngadirojo, Pacitan, Jawa Timur</span>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Menu Utama</h3>
+                <a href="index.html">Beranda</a>
+                <a href="products.html">Produk</a>
+                <a href="testimonials.html">Testimoni</a>
+                <a href="about.html">Tentang Kami</a>
+            </div>
+
+            <div class="footer-products">
+                <h3>Produk Kami</h3>
+                <span>Nastar</span>
+                <span>Kastengel</span>
+                <span>Putri Salju</span>
+                <span>Kue Kacang</span>
+                <span>Cookies Coklat</span>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                <a href="https://instagram.com/nissa.kuker" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    </svg>
+                    @nissa.kuker
+                </a>
+                <a href="https://instagram.com/anissa.wida" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    </svg>
+                    @anissa.wida
+                </a>
+                <a href="https://wa.me/6281234567890" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Aneka Kue Kering - Nissa Kuker. All rights reserved.<br> Made in Semarang by adhiwibowo</p>
+        </div>
+    </footer>
+
+    <script src="js/products-data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

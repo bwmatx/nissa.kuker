@@ -1,0 +1,218 @@
+/* Products Page Specific Styles */
+
+.page-header {
+    background: linear-gradient(to bottom right, white, var(--sage-100), white);
+    border-bottom: 2px solid rgba(180, 215, 168, 0.3);
+    padding: 6rem 0 3rem;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+    .page-header {
+        padding: 8rem 0 4rem;
+        margin-top: 5rem;
+    }
+}
+
+.page-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+    .page-title { font-size: 3rem; }
+}
+
+@media (min-width: 1024px) {
+    .page-title { font-size: 3.75rem; }
+}
+
+.page-description {
+    font-size: 1rem;
+    color: var(--text-muted);
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+@media (min-width: 640px) {
+    .page-description { font-size: 1.125rem; }
+}
+
+/* Filter Section */
+.filter-section {
+    position: sticky;
+    top: 4rem;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(180, 215, 168, 0.2);
+    z-index: 40;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+@media (min-width: 640px) {
+    .filter-section { top: 5rem; }
+}
+
+.filter-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1.25rem 0;
+}
+
+@media (min-width: 640px) {
+    .filter-wrapper {
+        gap: 1rem;
+        padding: 1.5rem 0;
+    }
+}
+
+.filter-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 0.875rem;
+    flex-shrink: 0;
+}
+
+@media (min-width: 640px) { 
+    .filter-label { font-size: 1rem; }
+}
+
+.filter-label svg {
+    color: var(--sage-600);
+}
+
+.filter-label span {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .filter-label span { display: inline; }
+}
+
+.filter-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    overflow-x: auto;
+    flex: 1;
+    padding-bottom: 0.25rem;
+    scrollbar-width: none;
+    justify-content: center;
+}
+
+.filter-buttons::-webkit-scrollbar {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .filter-buttons { gap: 0.75rem; }
+}
+
+.filter-btn {
+    padding: 0.625rem 1.25rem;
+    border-radius: var(--radius-md);
+    font-weight: 600;
+    font-size: 0.875rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+    border: 2px solid rgba(180, 215, 168, 0.3);
+    background: white;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+@media (min-width: 640px) {
+    .filter-btn {
+        font-size: 1rem;
+    }
+}
+
+.filter-btn:hover {
+    border-color: var(--sage-300);
+    background: var(--sage-100);
+}
+
+.filter-btn.active {
+    background: linear-gradient(to right, var(--sage-600), var(--sage-500));
+    border-color: var(--sage-600);
+    color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Products Section */
+.products-section {
+    padding: 3rem 0;
+    min-height: 50vh;
+}
+
+@media (min-width: 640px) {
+    .products-section { padding: 4rem 0; }
+}
+
+.products-count {
+    margin-bottom: 1.5rem;
+    color: var(--text-muted);
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+@media (min-width: 640px) {
+    .products-count {
+        text-align: left;
+    }
+}
+
+.count-number {
+    font-weight: 700;
+    color: var(--sage-600);
+}
+
+/* Product Cards Animation */
+.product-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.empty-state-icon {
+    width: 6rem;
+    height: 6rem;
+    background: linear-gradient(to bottom right, var(--sage-100), var(--cream-100));
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.empty-state-icon svg {
+    width: 3rem;
+    height: 3rem;
+    color: var(--sage-600);
+}
+
+.empty-state-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.empty-state-description {
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}

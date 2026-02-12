@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Nissa Kuker</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/decorations.css">
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-content">
+            <a href="index.html" class="logo">
+                <div>
+                    <h1 class="logo-text">Nissa Kuker</h1>
+                    <p class="logo-subtitle">Aneka Kue Kering</p>
+                </div>
+            </a>
+
+            <div class="nav-desktop">
+                <a href="index.html" class="nav-link">Beranda</a>
+                <a href="products.html" class="nav-link">Produk</a>
+                <a href="testimonials.html" class="nav-link">Testimoni</a>
+                <a href="about.html" class="nav-link">Tentang</a>
+            </div>
+
+            <div class="nav-mobile">
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="index.html" class="mobile-menu-link">Beranda</a>
+            <a href="products.html" class="mobile-menu-link">Produk</a>
+            <a href="testimonials.html" class="mobile-menu-link">Testimoni</a>
+            <a href="about.html" class="mobile-menu-link">Tentang</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="badge gold">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="9 11 12 14 22 4"></polyline>
+                    <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+                </svg>
+                Checkout
+            </div>
+            <h1 class="page-title">Selesaikan Pesanan</h1>
+            <p class="page-description">Isi data Anda dan kirim pesanan via WhatsApp</p>
+        </div>
+    </section>
+
+    <!-- Checkout Content -->
+    <section class="checkout-section ketupat-pattern">
+        <div class="container">
+            <div class="checkout-layout">
+                <!-- Checkout Form -->
+                <div class="checkout-form-wrapper">
+                    <div class="form-header">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                        <h2>Data Pemesan</h2>
+                    </div>
+
+                    <form id="checkoutForm" class="checkout-form">
+                        <div class="form-group">
+                            <label for="customerName">
+                                Nama Lengkap <span class="required">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="customerName" 
+                                name="customerName" 
+                                class="form-input" 
+                                placeholder="Masukkan nama lengkap Anda"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customerPhone">
+                                Nomor WhatsApp <span class="required">*</span>
+                            </label>
+                            <input 
+                                type="tel" 
+                                id="customerPhone" 
+                                name="customerPhone" 
+                                class="form-input" 
+                                placeholder="08xxxxxxxxxx"
+                                required
+                            >
+                            <small class="form-help">Format: 08xxxxxxxxxx (tanpa +62)</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customerAddress">
+                                Alamat Lengkap <span class="required">*</span>
+                            </label>
+                            <textarea 
+                                id="customerAddress" 
+                                name="customerAddress" 
+                                class="form-input" 
+                                rows="3"
+                                placeholder="Jalan, RT/RW, Desa/Kelurahan, Kecamatan"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="deliveryDate">
+                                Tanggal Pengiriman <span class="required">*</span>
+                            </label>
+                            <input 
+                                type="date" 
+                                id="deliveryDate" 
+                                name="deliveryDate" 
+                                class="form-input" 
+                                required
+                            >
+                            <small class="form-help">Pemesanan minimal H-7 sebelum tanggal pengiriman</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="notes">
+                                Catatan Tambahan (Opsional)
+                            </label>
+                            <textarea 
+                                id="notes" 
+                                name="notes" 
+                                class="form-input" 
+                                rows="3"
+                                placeholder="Tulis catatan khusus untuk pesanan Anda"
+                            ></textarea>
+                        </div>
+
+                        <div class="form-note">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <line x1="12" y1="16" x2="12" y2="12"></line>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            </svg>
+                            <p>Setelah klik tombol "Kirim via WhatsApp", Anda akan diarahkan ke chat WhatsApp untuk konfirmasi pesanan dan pembayaran.</p>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                            </svg>
+                            Kirim via WhatsApp
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <div class="summary-header">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                        </svg>
+                        <h2>Ringkasan Pesanan</h2>
+                    </div>
+
+                    <div class="order-items" id="orderItems">
+                        <!-- Items akan di-load via JavaScript -->
+                    </div>
+
+                    <div class="summary-divider"></div>
+
+                    <div class="summary-details">
+                        <div class="summary-row">
+                            <span>Subtotal</span>
+                            <span id="orderSubtotal" class="summary-value">Rp 0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Jumlah Item</span>
+                            <span id="orderItemCount" class="summary-value">0 toples</span>
+                        </div>
+                        <div class="summary-row total-row">
+                            <span>Total</span>
+                            <span id="orderTotal" class="total-value">Rp 0</span>
+                        </div>
+                    </div>
+
+                    <div class="delivery-info">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="1" y="3" width="15" height="13"></rect>
+                            <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon>
+                            <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                            <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                        </svg>
+                        <div>
+                            <p class="delivery-title">Biaya Pengiriman</p>
+                            <p class="delivery-text">Akan diinformasikan via WhatsApp</p>
+                        </div>
+                    </div>
+
+                    <a href="cart.html" class="btn btn-secondary btn-block">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="19" y1="12" x2="5" y2="12"></line>
+                            <polyline points="12 19 5 12 12 5"></polyline>
+                        </svg>
+                        Kembali ke Keranjang
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer islamic-pattern">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+                            <path d="M18 3l.5 2 2 .5-2 .5-.5 2-.5-2-2-.5 2-.5.5-2z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Nissa Kuker</h3>
+                        <p>Kue Lebaran Berkualitas</p>
+                    </div>
+                </div>
+                <p class="footer-description">Menghadirkan kue kering premium untuk melengkapi momen spesial Anda sejak 2021</p>
+                <div class="footer-location">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                        <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                    <span>Ngadirojo, Pacitan, Jawa Timur</span>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Menu Utama</h3>
+                <a href="index.html">Beranda</a>
+                <a href="products.html">Produk</a>
+                <a href="testimonials.html">Testimoni</a>
+                <a href="about.html">Tentang Kami</a>
+            </div>
+
+            <div class="footer-products">
+                <h3>Produk Kami</h3>
+                <span>Nastar</span>
+                <span>Kastengel</span>
+                <span>Putri Salju</span>
+                <span>Kue Kacang</span>
+                <span>Cookies Coklat</span>
+            </div>
+
+            <div class="footer-contact">
+                <h3>Hubungi Kami</h3>
+                <a href="https://instagram.com/nissa.kuker" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    </svg>
+                    @nissa.kuker
+                </a>
+                <a href="https://instagram.com/anissa.wida" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    </svg>
+                    @anissa.wida
+                </a>
+                <a href="https://wa.me/6281234567890" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Aneka Kue Kering - Nissa Kuker. All rights reserved.</p>
+            <p>Made in Semarang by adhiwibowo</p>
+        </div>
+    </footer>
+
+    <script src="js/products-data.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>
