@@ -20,7 +20,7 @@ const products = [
         id: 'putri-salju',
         name: 'Putri Salju',
         category: 'Modern',
-        price: 27500,
+        price: 25000,
         description: 'Kue lembut yang meleleh di mulut dengan lapisan gula halus, tekstur yang lembut dan manis.',
         image: 'img/putri-salju.jpg'
     },
@@ -36,7 +36,7 @@ const products = [
         id: 'cookies-coklat',
         name: 'Cookies Coklat',
         category: 'Modern',
-        price: 25000,
+        price: 27500,
         description: 'Cookies coklat renyah di luar dan lembut di dalam.',
         image: 'img/kue-coklat.jpeg'
     },
