@@ -1,6 +1,6 @@
 // Checkout Page JavaScript
 
-const WHATSAPP_NUMBER = '6281234567890'; // Ganti dengan nomor WA Nissa Kuker
+const WHATSAPP_NUMBER = '62895610521818'; // Ganti dengan nomor WA Nissa Kuker
 
 function renderOrderSummary() {
     const cart = getCart();
